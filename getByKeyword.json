@@ -15,7 +15,8 @@
     "?spatial rdfs:label ?geoLabel",
     "?s ?p ?o"
   ],
-  "$filter": "bif:contains(?label, str(?_keyword))",
+  FILTER(REGEX(?o, "_", "i"))
+  "$filter": "REGEX(?label, ?_keyword, "i")",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -26,7 +27,7 @@
   "$lang": "en",
   "$limit": 50,
   "grlc": {
-    "summary": "3Retrieve all information about CYBELE datasets having the provided keyword",
+    "summary": "4Retrieve all information about CYBELE datasets having the provided keyword",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

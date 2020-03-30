@@ -8,6 +8,7 @@
   "$where": [
     "?s a dcat:Dataset",
     "?s dct:spatial ?spatial",
+    "?s dct:publisher ?publisher",
     "?s ?p ?o"
   ],
   "$prefixes": {

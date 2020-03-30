@@ -11,11 +11,8 @@
     "?s a dcat:Dataset",
     "?s dct:spatial ?spatial",
     "?s dct:publisher ?publisher",
-    "?s rdfs:label ?label",
-    "?spatial rdfs:label ?geoLabel",
     "?s ?p ?o"
   ],
-  "$filter": "regex(?label, ?_keyword, 'i')",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -26,7 +23,7 @@
   "$lang": "en",
   "$limit": 50,
   "grlc": {
-    "summary": "Retrieve all information about CYBELE datasets having the provided keyword, e.g., test",
+    "summary": "Retrieve all information about CYBELE datasets",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

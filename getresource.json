@@ -23,7 +23,6 @@
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",
-    "pagination": 50,
-    "defaults": " - resource: https://w3id.org/cybele/agent/id/8f6332ab-bb45-4199-a339-3f2710d4070d"
+    "pagination": 50    
     }
 }

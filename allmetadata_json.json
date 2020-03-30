@@ -1,5 +1,4 @@
 {
-  "@graph": "https://w3id.org/cybele/datasets/",
   "proto": {
     "id": "?s",
     "property": "?p",

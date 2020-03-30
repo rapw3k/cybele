@@ -7,13 +7,13 @@
   "$where": [
     "?s ?p ?o"
   ],
-  "$from": "https://w3id.org/cybele/datasets/",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dbo": "http://dbpedia.org/ontology/"
   },
   "$orderby": "?id",
+  "$from": "https://w3id.org/cybele/datasets/",
   "$lang": "en",
   "$limit": 10,
   "grlc": "#+ summary: Testing SPARQL Transformer in grlc\n#+ endpoint: https://www.foodie-cloud.org/sparql\n#+ tags:\n#+   - json\n#+ method: GET\n#+ pagination: 50"

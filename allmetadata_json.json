@@ -1,5 +1,5 @@
 {
-  "@context": "https://w3id.org/cybele/datasets/"
+  "@context": "https://w3id.org/cybele/datasets/",
   "proto": {
     "id": "?s",
     "property": "?p",

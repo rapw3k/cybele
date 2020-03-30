@@ -16,8 +16,13 @@
     "dct": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#"
   },
-  "$orderby": "?id",
   "$lang": "en",
   "$limit": 50,
-  "grlc": "#+ summary: New testing SPARQL Transformer in grlc\n#+ endpoint: http://dbpedia.org/sparql\n#+ tags:\n#+   - json\n#+ method: GET\n#+ pagination: 50\n#+ defaults:\n#+   - resource: https://w3id.org/cybele/agent/id/8f6332ab-bb45-4199-a339-3f2710d4070d"
+  "grlc": {
+    "summary": "Testing SPARQL Transformer in grlc",
+    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "tags": [ "json" ],
+    "method": "GET",
+    "pagination": 50,
+    "defaults": "- resource: https://w3id.org/cybele/agent/id/8f6332ab-bb45-4199-a339-3f2710d4070d"
 }

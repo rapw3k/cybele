@@ -13,7 +13,7 @@
   "$lang": "en",
   "$limit": 100,
   "grlc": {
-    "summary": "New testing SPARQL Transformer in grlc",
+    "summary": "Testing SPARQL Transformer in grlc",
     "endpoint": "http://dbpedia.org/sparql",
     "tags": [ "test" ],
     "method": "GET",

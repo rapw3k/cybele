@@ -19,10 +19,12 @@
   "$lang": "en",
   "$limit": 50,
   "grlc": {
-    "summary": "Testing SPARQL Transformer in grlc",
+    "summary": "New testing SPARQL Transformer in grlc",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",
-    "pagination": 50    
+    "pagination": 50,
+    "defaults": "\n#+   - resource: http://dbpedia.org/ontology/Band"
+        
     }
 }

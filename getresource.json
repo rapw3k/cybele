@@ -19,5 +19,5 @@
   "$orderby": "?id",
   "$lang": "en",
   "$limit": 50,
-  "grlc": "#+ summary: Testing SPARQL Transformer in grlc\n#+ endpoint: http://dbpedia.org/sparql\n#+ tags:\n#+   - json\n#+ method: GET\n#+ pagination: 50\n#+ defaults:\n#+   - resource: https://w3id.org/cybele/agent/id/8f6332ab-bb45-4199-a339-3f2710d4070d"
+  "grlc": "#+ summary: New testing SPARQL Transformer in grlc\n#+ endpoint: http://dbpedia.org/sparql\n#+ tags:\n#+   - json\n#+ method: GET\n#+ pagination: 50\n#+ defaults:\n#+   - resource: https://w3id.org/cybele/agent/id/8f6332ab-bb45-4199-a339-3f2710d4070d"
 }

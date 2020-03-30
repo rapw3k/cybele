@@ -1,8 +1,10 @@
 {
   "proto": {
     "id": "?s",
-    "property": "?p",
-    "value": "?o"
+    "metadata": {
+    	"property": "?p",
+    	"value": "?o"
+    }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [

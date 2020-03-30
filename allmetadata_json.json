@@ -13,7 +13,7 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dbo": "http://dbpedia.org/ontology/"
   },
-  "$orderby": "?s",
+  "$orderby": "?id",
   "$lang": "en",
   "$limit": 10,
   "grlc": {

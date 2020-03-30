@@ -4,6 +4,7 @@
     "property": "?p",
     "value": "?o"
   },
+  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s ?p ?o"
   ],
@@ -13,7 +14,6 @@
     "dbo": "http://dbpedia.org/ontology/"
   },
   "$orderby": "?id",
-  "$from": "https://w3id.org/cybele/datasets/",
   "$lang": "en",
   "$limit": 10,
   "grlc": "#+ summary: Testing SPARQL Transformer in grlc\n#+ endpoint: https://www.foodie-cloud.org/sparql\n#+ tags:\n#+   - json\n#+ method: GET\n#+ pagination: 50"

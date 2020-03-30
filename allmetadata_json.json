@@ -19,7 +19,7 @@
   "grlc": {
     "summary": "Testing SPARQL Transformer in grlc",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "json" ],
+    "tags": [ "test" ],
     "method": "GET",
     "pagination": 50
   }

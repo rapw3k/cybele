@@ -1,0 +1,11 @@
+#+ summary: Returns all metadata about CYBELE datasets
+#+ tags:
+#+   - RDF dump
+
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+select ?s ?p ?v 
+from <https://w3id.org/cybele/datasets/> 
+where {
+   ?s ?p ?v  
+}
+order by ?s

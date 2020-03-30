@@ -16,5 +16,11 @@
   "$orderby": "?id",
   "$lang": "en",
   "$limit": 10,
-  "grlc": "#+ summary: Testing SPARQL Transformer in grlc\n#+ endpoint: https://www.foodie-cloud.org/sparql\n#+ tags:\n#+   - json\n#+ method: GET\n#+ pagination: 50"
+  "grlc": {
+    "summary": "Testing SPARQL Transformer in grlc",
+    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "tags": [ "json" ],
+    "method": "GET",
+    "pagination": 50
+  }
 }

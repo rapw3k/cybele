@@ -8,10 +8,14 @@
   },
   "$where": [
     "?s a dcat:Dataset",
+    "?s dct:spatial ?spatial",
+    "?s dct:publisher ?publisher",
     "?s rdfs:label ?label",
+    "?spatial rdfs:label ?geoLabel",
+    "?publisher rdfs:label ?pubLabel",
     "?s ?p ?o"
   ],
-  "$filter": "regex(?label, ?_keyword, 'i')",
+  "$filter": "regex(?label, ?_keyword, 'i') || regex(?geoLabel, ?_keyword, 'i') || regex(?pubLabel, ?_keyword, 'i')",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -22,9 +26,9 @@
   "$lang": "en",
   "$limit": 50,
   "grlc": {
-    "summary": "Retrieve all information about CYBELE datasets with label including the provided keyword, e.g., test.",
+    "summary": "Retrieve all information about CYBELE datasets having the provided keyword, e.g., test. The query checks the dataset labels, geolocation labels associated (e.g., Greece) and publisher labels (e.g., PSNC)",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "test" ],
+    "tags": [ "json" ],
     "method": "GET",
     "pagination": 50
   }

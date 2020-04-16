@@ -1,8 +1,10 @@
 {
   "proto": {
     "id": "?s",
-    "property": "?p",
-    "value": "?o"
+    "metadata": {
+    	"property": "?p",
+    	"value": "?o"
+    }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
@@ -17,9 +19,9 @@
   "$lang": "en",
   "$limit": 10,
   "grlc": {
-    "summary": "Testing SPARQL Transformer in grlc",
+    "summary": "Retrieve all information about CYBELE datasets",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "test" ],
+    "tags": [ "json" ],
     "method": "GET",
     "pagination": 50
   }

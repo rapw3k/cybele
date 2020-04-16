@@ -11,7 +11,7 @@
     "?s dct:spatial ?spatial",
     "?s dct:publisher ?publisher",
     "?s rdfs:label ?label",
-    "?spatial rdfs:label ?geoLabel",
+    "?spatial rdfs:labelx ?geoLabel",
     "?s ?p ?o"
   ],
   "$filter": "regex(?label, ?_keyword, 'i') || regex(?geoLabel, ?_keyword, 'i')",
@@ -27,7 +27,7 @@
   "grlc": {
     "summary": "Retrieve all information about CYBELE datasets having the provided keyword, e.g., test. The query checks both, the dataset label and any geolocation label associated (e.g., Greece)",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "json" ],
+    "tags": [ "test" ],
     "method": "GET",
     "pagination": 50
   }

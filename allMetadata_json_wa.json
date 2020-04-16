@@ -23,7 +23,7 @@
   "$lang": "en",
   "$limit": 50,
   "grlc": {
-    "summary": "Retrieve all information about CYBELE datasets",
+    "summary": "Retrieve all information about CYBELE datasets (having spatial and publisher info)",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

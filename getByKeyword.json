@@ -6,6 +6,7 @@
     	"value": "?o"
     }
   },
+  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
     "?s rdfs:label ?label",

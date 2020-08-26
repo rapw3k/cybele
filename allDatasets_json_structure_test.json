@@ -6,12 +6,9 @@
     	"value": "?o"    	    	 		
     },
     "structure": {
-    	"id":"?structure",
+    	"id":"?structureD",
     	"dimensions": {
     		"id":"?dimensionComponent"
-    	},
-    	"measures": {
-    		"id":"?measureComponent"
     	}
     }
   },
@@ -19,10 +16,11 @@
   "$where": [
     "?s a dcat:Dataset",
     "?s ?p ?o" ,
-    "?s qb:structure ?structure" ,
-    "?structure qb:component ?dimensionComponent" ,
+    "?s qb:structure ?structureD" ,
+    "?structureD qb:component ?dimensionComponent" ,
     "?dimensionComponent qb:dimension ?dimensionProperty" ,
-    "?structure qb:component ?measureComponent" ,
+    "?s qb:structure ?structureM" ,
+    "?structureM qb:component ?measureComponent" ,
     "?measureComponent qb:measure ?measureProperty"
   ],
   "$prefixes": {

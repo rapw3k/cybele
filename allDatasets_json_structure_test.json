@@ -12,8 +12,7 @@
     "?s a dcat:Dataset",
     "?s ?p ?o" ,
     "?s qb:structure ?structure" ,
-		"?structure qb:component ?dimensionComponent" ,
-		"?structure qb:component ?measureComponent" 
+		"?structure qb:component ?dimensionComponent"		
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

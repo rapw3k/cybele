@@ -5,21 +5,19 @@
     	"property": "?p",
     	"value": "?o"    	    	 		
     },    
-    "structureD": {
+    "structure": {
     	
     	"dimensions": {
     		"id":"?dimensionComponent" ,
     		"label":"?dimensionLabel"
-    	}
-    },
-    "structureM": {
-    	
+    	},
     	"measures": {
     		"id":"?measureComponent" ,
     		"label":"?measureLabel" ,
     		"UoM":"?measureUoM"
     	}
     }
+    
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [

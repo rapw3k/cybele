@@ -4,20 +4,24 @@
     "metadata": {
     	"property": "?p",
     	"value": "?o"    	    	 		
-    },    
-    "structure": {
-    	
+    }, 
+    "structure": {   
+    "structureD": {
+    	"id":"?structureD",
     	"dimensions": {
     		"id":"?dimensionComponent" ,
     		"label":"?dimensionLabel"
-    	},
+    	}
+    },
+    "structureM": {
+    	"id":"?structureM",    	
     	"measures": {
     		"id":"?measureComponent" ,
     		"label":"?measureLabel" ,
     		"UoM":"?measureUoM"
     	}
     }
-    
+    }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [

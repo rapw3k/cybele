@@ -1,0 +1,44 @@
+{
+  "proto": {
+    "id": "?_resource_iri",
+    "structure":{
+    "dimensions": {
+    	"id":"?dimensionComponent" ,
+    	"label":"?dimensionLabel"
+    },
+    "measures": {
+    	"id":"?measureComponent" ,
+    	"label":"?measureLabel" ,
+    	"UoM":"?measureUoM"    	
+    }
+    }    
+  },
+  "$from": "https://w3id.org/cybele/datasets/",
+  "$where": [    
+    "?_resource_iri qb:structure ?structureD" ,
+    "?structureD qb:component ?dimensionComponent" ,
+    "?dimensionComponent qb:dimension ?dimensionProperty" ,
+    "?dimensionProperty rdfs:label ?dimensionLabel" ,
+    "?_resource_iri qb:structure ?structureM" ,
+    "?structureM qb:component ?measureComponent" ,
+    "?measureComponent qb:measure ?measureProperty" ,
+    "?measureProperty rdfs:label ?measureLabel" ,
+    "?measureProperty sdmx-attribute:unitMeasure ?measureUoM"
+  ],
+  "$prefixes": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dct": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "$lang": "en",
+  "$limit": 100,
+  "grlc": {
+    "summary": "Retrieve the structure information about a particular dataset (e.g., https://w3id.org/cybele/database/id/DB_2)",
+    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "tags": [ "json" ],
+    "method": "GET",
+    "pagination": 100
+    }
+}

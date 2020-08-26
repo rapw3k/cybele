@@ -52,10 +52,11 @@
 		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
 		"cybele":	"http://w3id.org/cybele/model#"
   },
+  "$limit": 30,
   "$orderby": "?id",
   "$lang": "en",
   "grlc": {
-    "summary": "Retrieve all information about CYBELE datasets, including their structure",
+    "summary": "Retrieve all information about CYBELE datasets, including only those with structure and database distribution",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

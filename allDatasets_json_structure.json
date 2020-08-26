@@ -3,32 +3,45 @@
     "id": "?s",
     "metadata": {
     	"property": "?p",
-    	"value": "?o",
-    	"structure": {
-    		"dimension":{
-    			"id": "?dimensionProperty",
-    			"label": "?dimensionLabel"
-    		},
-    		"measure":{
-    			"id": "?measureProperty",
-    			"label": "?measureLabel",
-    			"UoM": "?measureUoM"
-    		}
+    	"value": "?o"    	    	 		
+    }, 
+    "dimensions": {
+    	"id":"?dimensionComponent" ,
+    	"label":"?dimensionLabel"
+    },
+    "measures": {
+    	"id":"?measureComponent" ,
+    	"label":"?measureLabel" ,
+    	"UoM":"?measureUoM"    	
+    },
+    "databases":{
+    	"id":"?database" ,
+    	"label":"?databaseLabel",
+    	"tables":{
+    		"id":"?databaseTable",
+    		"label":"?tableName"
     	}
-    }
+    }  
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
     "?s ?p ?o" ,
-    "?s qb:structure ?structure" ,
-		"?structure qb:component ?dimensionComponent" ,
-		"?dimensionComponent qb:dimension ?dimensionProperty" ,
-		"?dimensionProperty rdfs:label ?dimensionLabel" ,
-		"?structure qb:component ?measureComponent" ,
-		"?measureComponent qb:measure ?measureProperty" ,
-		"?measureProperty rdfs:label ?measureLabel" ,
-		"?measureProperty sdmx-attribute:unitMeasure ?measureUoM"
+    "?s qb:structure ?structureD" ,
+    "?structureD qb:component ?dimensionComponent" ,
+    "?dimensionComponent qb:dimension ?dimensionProperty" ,
+    "?dimensionProperty rdfs:label ?dimensionLabel" ,
+    "?s qb:structure ?structureM" ,
+    "?structureM qb:component ?measureComponent" ,
+    "?measureComponent qb:measure ?measureProperty" ,
+    "?measureProperty rdfs:label ?measureLabel" ,
+    "?measureProperty sdmx-attribute:unitMeasure ?measureUoM" ,
+    "?s dcat:distribution ?distribution" ,
+    "?distribution cybele:accessDatabase ?database" ,
+    "?database rdfs:label ?databaseLabel" ,
+    "?database cybele:connectionString ?connectionString" ,
+    "?database cybele:accessTable ?databaseTable" ,
+    "?databaseTable cybele:tableName ?tableName"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -36,15 +49,16 @@
     "dbo": "http://dbpedia.org/ontology/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "qb": "http://purl.org/linked-data/cube#",
-		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#"
+		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+		"cybele":	"http://w3id.org/cybele/model#"
   },
   "$orderby": "?id",
   "$lang": "en",
   "grlc": {
-    "summary": "Retrieve all information about CYBELE datasets, including their structure",
+    "summary": "Retrieve all information about CYBELE datasets, including only those with structure and database distribution",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",
-    "pagination": 50
+    "pagination": 100
   }
 }

@@ -5,11 +5,14 @@
     	"property": "?p",
     	"value": "?o"    	    	 		
     },
-    "structure": {
+    "structureD": {
     	"id":"?structureD",
     	"dimensions": {
     		"id":"?dimensionComponent"
-    	},
+    	}
+    },
+    "structureM": {
+    	"id":"?structureM",    	
     	"measures": {
     		"id":"?measureComponent"
     	}

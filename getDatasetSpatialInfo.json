@@ -3,7 +3,8 @@
     "id": "?_resource_iri",    
     "spatial": {
     	"id":"?spatial$anchor",
-    	"geometryAsWKT":"$locn:geometry" 
+    	"geometryAsWKT":"$locn:geometry"
+    }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [    

@@ -1,0 +1,50 @@
+{
+  "proto": {
+    "id": "?s",
+    "metadata": {
+    	"property": "?p",
+    	"value": "?o",
+    	"structure": {
+    		"dimension":{
+    			"id": "?dimensionProperty",
+    			"label": "?dimensionLabel"
+    		},
+    		"measure":{
+    			"id": "?measureProperty",
+    			"label": "?measureLabel",
+    			"UoM": "?measureUoM"
+    		}
+    	}
+    }
+  },
+  "$from": "https://w3id.org/cybele/datasets/",
+  "$where": [
+    "?s a dcat:Dataset",
+    "?s ?p ?o" ,
+    "?s qb:structure ?structure" ,
+		"?structure qb:component ?dimensionComponent" ,
+		"?dimensionComponent qb:dimension ?dimensionProperty" ,
+		"?dimensionProperty rdfs:label ?dimensionLabel" ,
+		"?structure qb:component ?measureComponent" ,
+		"?measureComponent qb:measure ?measureProperty" ,
+		"?measureProperty rdfs:label ?measureLabel" ,
+		"?measureProperty sdmx-attribute:unitMeasure ?measureUoM"
+  ],
+  "$prefixes": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dbo": "http://dbpedia.org/ontology/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "qb": "<http://purl.org/linked-data/cube#>",
+		"sdmx-attribute": "<http://purl.org/linked-data/sdmx/2009/attribute#>"
+  },
+  "$orderby": "?id",
+  "$lang": "en",
+  "grlc": {
+    "summary": "Retrieve all information about CYBELE datasets, including their structure",
+    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "tags": [ "json" ],
+    "method": "GET",
+    "pagination": 50
+  }
+}

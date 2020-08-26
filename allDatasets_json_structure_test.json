@@ -8,13 +8,15 @@
     "structureD": {
     	"id":"?structureD",
     	"dimensions": {
-    		"id":"?dimensionComponent"
+    		"id":"?dimensionComponent" ,
+    		"label":"$rdfs:label$required"
     	}
     },
     "structureM": {
     	"id":"?structureM",    	
     	"measures": {
-    		"id":"?measureComponent"
+    		"id":"?measureComponent" ,
+    		"label":"$rdfs:label$required"
     	}
     }
   },
@@ -44,6 +46,6 @@
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",
-    "pagination": 50
+    "pagination": 100
   }
 }

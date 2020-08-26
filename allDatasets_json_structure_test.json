@@ -13,12 +13,7 @@
     "?s ?p ?o" ,
     "?s qb:structure ?structure" ,
 		"?structure qb:component ?dimensionComponent" ,
-		"?dimensionComponent qb:dimension ?dimensionProperty" ,
-		"?dimensionProperty rdfs:label ?dimensionLabel" ,
-		"?structure qb:component ?measureComponent" ,
-		"?measureComponent qb:measure ?measureProperty" ,
-		"?measureProperty rdfs:label ?measureLabel" ,
-		"?measureProperty sdmx-attribute:unitMeasure ?measureUoM"
+		"?structure qb:component ?measureComponent" 
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

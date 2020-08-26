@@ -9,6 +9,9 @@
     	"id":"?structure",
     	"dimensions": {
     		"id":"?dimensionComponent"
+    	},
+    	"measures": {
+    		"id":"?measureComponent"
     	}
     }
   },
@@ -18,7 +21,9 @@
     "?s ?p ?o" ,
     "?s qb:structure ?structure" ,
     "?structure qb:component ?dimensionComponent" ,
-    "?dimensionComponent qb:dimension ?dimensionProperty"
+    "?dimensionComponent qb:dimension ?dimensionProperty" ,
+    "?structure qb:component ?measureComponent" ,
+    "?measureComponent qb:measure ?measureProperty"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

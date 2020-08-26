@@ -6,23 +6,14 @@
     	"value": "?o"    	    	 		
     },
     "structure": {
-    	"dimension":{
-    		"id":"?dimensionProperty"
-    	},
-    	"measure":{
-    		"id":"?measureProperty"
-    	}
+    	"id":"?structure"
     }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
     "?s ?p ?o" ,
-    "?s qb:structure ?structure",
-    "?structure qb:component ?dimensionComponent" ,
-		"?dimensionComponent qb:dimension ?dimensionProperty" ,
-		"?structure qb:component ?measureComponent" ,
-		"?measureComponent qb:measure ?measureProperty"
+    "?s qb:structure ?structure"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

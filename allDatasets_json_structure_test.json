@@ -49,7 +49,8 @@
     "dbo": "http://dbpedia.org/ontology/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "qb": "http://purl.org/linked-data/cube#",
-		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#"
+		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
+		"cybele":	"http://w3id.org/cybele/model#"
   },
   "$orderby": "?id",
   "$lang": "en",

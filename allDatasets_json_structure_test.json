@@ -4,16 +4,16 @@
     "metadata": {
     	"property": "?p",
     	"value": "?o"    	    	 		
-    },
+    },    
     "structureD": {
-    	"id":"?structureD",
+    	
     	"dimensions": {
     		"id":"?dimensionComponent" ,
     		"label":"?dimensionLabel"
     	}
     },
     "structureM": {
-    	"id":"?structureM",    	
+    	
     	"measures": {
     		"id":"?measureComponent" ,
     		"label":"?measureLabel" ,

@@ -18,8 +18,8 @@
     	"id":"?database" ,
     	"label":"?databaseLabel",
     	"tables":{
-    		"id":"databaseTable",
-    		"label":"tableName"
+    		"id":"?databaseTable",
+    		"label":"?tableName"
     	}
     }  
   },

@@ -35,7 +35,7 @@
   "$lang": "en",
   "$limit": 100,
   "grlc": {
-    "summary": "Retrieve the structure information about a particular dataset (e.g., https://w3id.org/cybele/database/id/DB_2)",
+    "summary": "Retrieve the structure information about a particular dataset (e.g., https://w3id.org/cybele/dataset/id/dataset_2)",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

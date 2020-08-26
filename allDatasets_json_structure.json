@@ -35,8 +35,8 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dbo": "http://dbpedia.org/ontology/",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "qb": "<http://purl.org/linked-data/cube#>",
-		"sdmx-attribute": "<http://purl.org/linked-data/sdmx/2009/attribute#>"
+    "qb": "http://purl.org/linked-data/cube#",
+		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#"
   },
   "$orderby": "?id",
   "$lang": "en",

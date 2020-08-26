@@ -4,7 +4,9 @@
     "metadata": {
     	"property": "?p",
     	"value": "?o",
-    	"structure": "?structure"   		
+    	"structure": {
+    			"component":"?structure$qb:component"  
+    	}    	 		
     }
   },
   "$from": "https://w3id.org/cybele/datasets/",

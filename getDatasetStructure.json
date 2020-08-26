@@ -1,7 +1,6 @@
 {
   "proto": {
-    "id": "?_resource_iri",
-    "structure":{
+    "id": "?_resource_iri",    
     "dimensions": {
     	"id":"?dimensionComponent" ,
     	"label":"?dimensionLabel"
@@ -10,8 +9,7 @@
     	"id":"?measureComponent" ,
     	"label":"?measureLabel" ,
     	"UoM":"?measureUoM"    	
-    }
-    }    
+    }       
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [    

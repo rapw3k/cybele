@@ -6,7 +6,10 @@
     	"value": "?o"    	    	 		
     },
     "structure": {
-    	"id":"?structure"
+    	"id":"?structure",
+    	"component": {
+    		"id":"?dimensionComponent"
+    	}
     }
   },
   "$from": "https://w3id.org/cybele/datasets/",

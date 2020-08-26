@@ -9,6 +9,9 @@
     	"id":"?structureD",
     	"dimensions": {
     		"id":"?dimensionComponent"
+    	},
+    	"measures": {
+    		"id":"?measureComponent"
     	}
     }
   },

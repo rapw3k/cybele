@@ -3,8 +3,7 @@
     "id": "?s",
     "metadata": {
     	"property": "?p",
-    	"value": "?o",
-    	"structure": "?dimensionComponent"    		
+    	"value": "?o"   		
     }
   },
   "$from": "https://w3id.org/cybele/datasets/",

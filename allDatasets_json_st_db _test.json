@@ -5,20 +5,33 @@
     	"property": "?p",
     	"value": "?o"    	    	 		
     }, 
+    "spatial": {
+    	"id":"$dct:spatial",
+    	"geometryAsWKT":"$locn:geometry"
+    },
     "dimensions": {
     	"id":"$qb:structure/qb:component/qb:dimension" ,
     	"label":"$rdfs:label"
     },
-    "spatial": {
-    	"id":"?spatial$anchor",
-    	"geometryAsWKT":"$locn:geometry"
+    "measures": {
+    	"id":"$qb:structure/qb:component/qb:measure" ,
+    	"label":"$rdfs:label" ,
+    	"UoM":"$sdmx-attribute:unitMeasure"    	
+    },
+    "databases":{
+    	"id":"$dcat:distribution/cybele:accessDatabase" ,
+    	"label":"$rdfs:label" ,
+    	"connectionString":"$cybele:connectionString" ,
+    	"tables":{
+    		"id":"$cybele:accessTable",
+    		"label":"$cybele:tableName"
+    	}
     }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
-    "?s ?p ?o" ,      
-    "OPTIONAL {?s dct:spatial ?spatial}"
+    "?s ?p ?o"    
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

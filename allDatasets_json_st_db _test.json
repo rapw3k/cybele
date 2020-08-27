@@ -17,8 +17,10 @@
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
-    "?s ?p ?o" ,    
-    "?s qb:structure/qb:component/qb:dimension ?dimensionProperty",        
+    "?s ?p ?o" ,  
+    "?s qb:structure ?structureD" ,
+    "?structureD qb:component ?dimensionComponent" ,
+    "?dimensionComponent qb:dimension ?dimensionProperty" ,    
     "?s dct:spatial ?spatial"
   ],
   "$prefixes": {

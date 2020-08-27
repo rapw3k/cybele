@@ -21,7 +21,7 @@
     "?s qb:structure ?structureD" ,
     "?structureD qb:component ?dimensionComponent" ,
     "?dimensionComponent qb:dimension ?dimensionProperty" ,    
-    "?s dct:spatial ?spatial"
+    "OPTIONAL {?s dct:spatial ?spatial}"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

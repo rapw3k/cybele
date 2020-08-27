@@ -21,7 +21,11 @@
     		"id":"?databaseTable$anchor",
     		"label":"?tableName"
     	}
-    }  
+    },
+    "spatial": {
+    	"id":"?spatial$anchor",
+    	"geometryAsWKT":"$locn:geometry"
+    }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
@@ -41,13 +45,15 @@
     "?database rdfs:label ?databaseLabel" ,
     "?database cybele:connectionString ?connectionString" ,
     "?database cybele:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName ?tableName"
+    "?databaseTable cybele:tableName ?tableName" ,
+    "?s dct:spatial ?spatial"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dbo": "http://dbpedia.org/ontology/",
     "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
     "qb": "http://purl.org/linked-data/cube#",
 		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
 		"cybele":	"http://w3id.org/cybele/model#"

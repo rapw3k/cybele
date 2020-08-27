@@ -1,37 +1,74 @@
 {
   "proto": {
     "id": "?s$anchor",
-    "metadata": {
-    	"property": "?p",
-    	"value": "?o"    	    	 		
-    }, 
+    "modified":"$dct:modified" ,
+    "issued":"$dct:issued" ,
+    "publisher": {
+    	"id":"$dct:publisher" ,
+    	"label":"$rdfs:label"
+    },
+    "title":"$dct:title" ,
+    "language": {
+    	"id":"$dct:language" ,
+    	"label":"$rdfs:label"
+    },
+    "temporal": {
+    	"id":"$dct:temporal" ,
+    	"endDate":"$dcat:endDate" ,
+    	"startDate":"$dcat:startDate"
+    },
+    "temporalResolution":"$dcat:temporalResolution" ,
+    "conformsTo":{
+    	"id":"$dct:conformsTo" ,
+    	"label":"$rdfs:label"
+    },    
+    "landingPage":"$dcat:landingPage" ,
+    "accrualPeriodicity": {
+    	"id":"$dct:accrualPeriodicity" ,
+    	"label":"$rdfs:label"
+    },    
     "spatial": {
     	"id":"$dct:spatial",
     	"geometryAsWKT":"$locn:geometry"
     },
-    "dimensions": {
-    	"id":"$qb:structure/qb:component/qb:dimension" ,
-    	"label":"$rdfs:label"
+    "spatialResolutionInMeters":"$dcat:spatialResolutionInMeters" ,
+    "structure":{
+    	"id":"$qb:structure" ,
+    	"dimension": {
+    		"id":"$qb:component/qb:dimension" ,
+    		"label":"$rdfs:label"
+    	},
+    	"measure": {
+    		"id":"$qb:component/qb:measure" ,
+    		"label":"$rdfs:label" ,
+    		"UoM":"$sdmx-attribute:unitMeasure"
+    	}  
     },
-    "measures": {
-    	"id":"$qb:structure/qb:component/qb:measure" ,
-    	"label":"$rdfs:label" ,
-    	"UoM":"$sdmx-attribute:unitMeasure"    	
-    },
-    "databases":{
-    	"id":"$dcat:distribution/cybele:accessDatabase" ,
-    	"label":"$rdfs:label" ,
-    	"connectionString":"$cybele:connectionString" ,
-    	"tables":{
-    		"id":"$cybele:accessTable",
-    		"label":"$cybele:tableName"
+    "dcat:distribution": {
+    	"id":"$dcat:distribution" ,
+    	"license": {
+    		"id":"dct:license" ,
+    		"label":"$rdfs:label"
+    	},
+    	"mediaType": {
+    		"id":"$dcat:mediaType" ,
+    		"label":"$rdfs:label"
+    	},
+    	"byteSize":"$dcat:byteSize" ,
+    	"accessDatabase": {
+    		"id":"$cybele:accessDatabase" ,
+    		"label":"$rdfs:label" ,
+    		"connectionString":"$cybele:connectionString" ,
+    		"accessTable":{
+    			"id":"$cybele:accessTable",
+    			"label":"$cybele:tableName"
+    		}
     	}
     }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
-    "?s a dcat:Dataset",
-    "?s ?p ?o"    
+    "?s a dcat:Dataset"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

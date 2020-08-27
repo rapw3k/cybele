@@ -6,19 +6,19 @@
     	"value": "?o"    	    	 		
     }, 
     "dimensions": {
-    	"id":"?dimensionComponent" ,
-    	"label":"?dimensionLabel"
+    	"id":"?dimensionProperty$anchor" ,
+    	"label":"$rdfs:label"
     },
     "measures": {
-    	"id":"?measureComponent" ,
-    	"label":"?measureLabel" ,
+    	"id":"?measureProperty$anchor" ,
+    	"label":"$rdfs:label" ,
     	"UoM":"?measureUoM"    	
     },
     "databases":{
-    	"id":"?database" ,
+    	"id":"?database$anchor" ,
     	"label":"?databaseLabel",
     	"tables":{
-    		"id":"?databaseTable",
+    		"id":"?databaseTable$anchor",
     		"label":"?tableName"
     	}
     },
@@ -34,11 +34,9 @@
     "?s qb:structure ?structureD" ,
     "?structureD qb:component ?dimensionComponent" ,
     "?dimensionComponent qb:dimension ?dimensionProperty" ,
-    "?dimensionProperty rdfs:label ?dimensionLabel" ,
     "?s qb:structure ?structureM" ,
     "?structureM qb:component ?measureComponent" ,
     "?measureComponent qb:measure ?measureProperty" ,
-    "?measureProperty rdfs:label ?measureLabel" ,
     "?measureProperty sdmx-attribute:unitMeasure ?measureUoM" ,
     "?s dcat:distribution ?distribution" ,
     "?distribution cybele:accessDatabase ?database" ,

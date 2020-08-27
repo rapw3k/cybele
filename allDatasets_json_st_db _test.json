@@ -18,9 +18,7 @@
   "$where": [
     "?s a dcat:Dataset",
     "?s ?p ?o" ,  
-    "?s qb:structure ?structureD" ,
-    "?structureD qb:component ?dimensionComponent" ,
-    "?dimensionComponent qb:dimension ?dimensionProperty" ,    
+    "?s qb:structure / qb:component / qb:dimension ?dimensionProperty",        
     "OPTIONAL {?s dct:spatial ?spatial}"
   ],
   "$prefixes": {

@@ -6,7 +6,7 @@
     	"value": "?o"    	    	 		
     }, 
     "dimensions": {
-    	"id":"$qb:structure/qb:component/qb:dimension$anchor"
+    	"id":"?dimensionProperty$anchor" ,
     	"label":"$rdfs:label"
     },
     "spatial": {
@@ -17,7 +17,8 @@
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
-    "?s ?p ?o" ,
+    "?s ?p ?o" ,    
+    "?s qb:structure/qb:component/qb:dimension ?dimensionProperty",        
     "?s dct:spatial ?spatial"
   ],
   "$prefixes": {

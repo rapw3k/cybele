@@ -1,15 +1,27 @@
 {
   "proto": {
-    "id": "?s$anchor",
+    "id": "?s",
     "metadata": {
     	"property": "?p",
     	"value": "?o"    	    	 		
     }, 
-    
-    "spatial": {
-    	"id":"?spatial$anchor",
-    	"geometryAsWKT":"$locn:geometry"
-    }
+    "dimensions": {
+    	"id":"?dimensionComponent" ,
+    	"label":"?dimensionLabel"
+    },
+    "measures": {
+    	"id":"?measureComponent" ,
+    	"label":"?measureLabel" ,
+    	"UoM":"?measureUoM"    	
+    },
+    "databases":{
+    	"id":"?database" ,
+    	"label":"?databaseLabel",
+    	"tables":{
+    		"id":"?databaseTable",
+    		"label":"?tableName"
+    	}
+    }  
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [

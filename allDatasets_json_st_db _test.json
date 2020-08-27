@@ -1,6 +1,6 @@
 {
   "proto": {
-    "id": "?s",
+    "id": "?s$anchor",
     "metadata": {
     	"property": "?p",
     	"value": "?o"    	    	 		
@@ -56,7 +56,8 @@
     "dct": "http://purl.org/dc/terms/",
     "qb": "http://purl.org/linked-data/cube#",
 		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
-		"cybele":	"http://w3id.org/cybele/model#"
+		"cybele":	"http://w3id.org/cybele/model#",
+		"locn":	"http://www.w3.org/ns/locn#" 
   },
   "$orderby": "?id",
   "$lang": "en",

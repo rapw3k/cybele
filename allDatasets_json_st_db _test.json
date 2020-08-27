@@ -21,7 +21,11 @@
     		"id":"?databaseTable",
     		"label":"?tableName"
     	}
-    }  
+    },
+    "spatial": {
+    	"id":"?spatial$anchor",
+    	"geometryAsWKT":"$locn:geometry"
+    }
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [

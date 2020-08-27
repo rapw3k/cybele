@@ -6,21 +6,8 @@
     	"value": "?o"    	    	 		
     }, 
     "dimensions": {
-    	"id":"?dimensionProperty$anchor" ,
+    	"id":"$qb:structure/qb:component/qb:dimension$anchor"
     	"label":"$rdfs:label"
-    },
-    "measures": {
-    	"id":"?measureProperty$anchor" ,
-    	"label":"$rdfs:label" ,
-    	"UoM":"?measureUoM"    	
-    },
-    "databases":{
-    	"id":"?database$anchor" ,
-    	"label":"?databaseLabel",
-    	"tables":{
-    		"id":"?databaseTable$anchor",
-    		"label":"?tableName"
-    	}
     },
     "spatial": {
     	"id":"?spatial$anchor",
@@ -31,19 +18,6 @@
   "$where": [
     "?s a dcat:Dataset",
     "?s ?p ?o" ,
-    "?s qb:structure ?structureD" ,
-    "?structureD qb:component ?dimensionComponent" ,
-    "?dimensionComponent qb:dimension ?dimensionProperty" ,
-    "?s qb:structure ?structureM" ,
-    "?structureM qb:component ?measureComponent" ,
-    "?measureComponent qb:measure ?measureProperty" ,
-    "?measureProperty sdmx-attribute:unitMeasure ?measureUoM" ,
-    "?s dcat:distribution ?distribution" ,
-    "?distribution cybele:accessDatabase ?database" ,
-    "?database rdfs:label ?databaseLabel" ,
-    "?database cybele:connectionString ?connectionString" ,
-    "?database cybele:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName ?tableName" ,
     "?s dct:spatial ?spatial"
   ],
   "$prefixes": {

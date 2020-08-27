@@ -5,23 +5,7 @@
     	"property": "?p",
     	"value": "?o"    	    	 		
     }, 
-    "dimensions": {
-    	"id":"?dimensionProperty$anchor" ,
-    	"label":"$rdfs:label"
-    },
-    "measures": {
-    	"id":"?measureProperty$anchor" ,
-    	"label":"$rdfs:label",
-    	"UoM":"?measureUoM"    	
-    },
-    "databases":{
-    	"id":"?database$anchor" ,
-    	"label":"$rdfs:label",
-    	"tables":{
-    		"id":"?databaseTable$anchor",
-    		"label":"$cybele:tableName"
-    	}
-    },
+    
     "spatial": {
     	"id":"?spatial$anchor",
     	"geometryAsWKT":"$locn:geometry"

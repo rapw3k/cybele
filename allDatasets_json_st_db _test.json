@@ -18,14 +18,18 @@
     "?s qb:structure ?structureD" ,
     "?structureD qb:component ?dimensionComponent" ,
     "?dimensionComponent qb:dimension ?dimensionProperty" ,
+    "?dimensionProperty rdfs:label ?dimensionLabel" ,
     "?s qb:structure ?structureM" ,
     "?structureM qb:component ?measureComponent" ,
     "?measureComponent qb:measure ?measureProperty" ,
+    "?measureProperty rdfs:label ?measureLabel" ,
     "?measureProperty sdmx-attribute:unitMeasure ?measureUoM" ,
     "?s dcat:distribution ?distribution" ,
     "?distribution cybele:accessDatabase ?database" ,
+    "?database rdfs:label ?databaseLabel" ,
     "?database cybele:connectionString ?connectionString" ,
     "?database cybele:accessTable ?databaseTable" ,
+    "?databaseTable cybele:tableName ?tableName" ,
     "?s dct:spatial ?spatial"
   ],
   "$prefixes": {

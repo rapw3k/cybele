@@ -1,6 +1,6 @@
 {
   "proto": {
-    "id": "?s",
+    "id": "?s$anchor",
     "metadata": {
     	"property": "?p",
     	"value": "?o"    	    	 		
@@ -19,7 +19,7 @@
     	"label":"?databaseLabel",
     	"tables":{
     		"id":"?databaseTable$anchor",
-    		"label":"?tableName"
+    		"label":"$rdfs:label"
     	}
     },
     "spatial": {

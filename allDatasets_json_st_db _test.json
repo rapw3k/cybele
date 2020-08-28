@@ -47,7 +47,7 @@
     "dcat:distribution": {
     	"id":"$dcat:distribution" ,
     	"license": {
-    		"id":"dct:license" ,
+    		"id":"$dct:license" ,
     		"label":"$rdfs:label"
     	},
     	"mediaType": {
@@ -66,10 +66,10 @@
     	}
     }
   },
-  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset"
   ],
+  "$filter": "STRSTARTS (str(?s), str(cybeleBase:))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -79,7 +79,8 @@
     "qb": "http://purl.org/linked-data/cube#",
 		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
 		"cybele":	"http://w3id.org/cybele/model#",
-		"locn":	"http://www.w3.org/ns/locn#" 
+		"locn":	"http://www.w3.org/ns/locn#",
+		"cybeleBase": "https://w3id.org/cybele/"
   },
   "$orderby": "?id",
   "$lang": "en",

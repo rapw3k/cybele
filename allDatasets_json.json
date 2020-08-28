@@ -86,7 +86,7 @@
   "$orderby": "?id",
   "$lang": "en",
   "grlc": {
-    "summary": "Retrieve all information about CYBELE datasets, including only those with structure and database distribution",
+    "summary": "Retrieve all information about CYBELE datasets, with full structure and data of refenced objects",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

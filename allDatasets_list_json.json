@@ -9,22 +9,20 @@
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
-    "?s dct:spatial ?spatial",
-    "?s dct:publisher ?publisher",
     "?s ?p ?o"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "dct": "http://purl.org/dc/terms/",
+    "dbo": "http://dbpedia.org/ontology/",
     "dcat": "http://www.w3.org/ns/dcat#"
   },
   "$orderby": "?id",
   "$lang": "en",
   "grlc": {
-    "summary": "Retrieve all information about CYBELE datasets, including only those having spatial and publisher information",
+    "summary": "Retrieve all information about CYBELE datasets",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "test" ],
+    "tags": [ "json" ],
     "method": "GET",
     "pagination": 50
   }

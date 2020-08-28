@@ -10,7 +10,7 @@
     "title":"$dct:title" ,
     "language": {
     	"id":"$dct:language" ,
-    	"label":"$rdfs:label|skos:prefLabel"
+    	"label":"$rdfs:label|skos:prefLabel$lang:en"
     },
     "temporal": {
     	"id":"$dct:temporal" ,
@@ -48,11 +48,11 @@
     	"id":"$dcat:distribution" ,
     	"license": {
     		"id":"$dct:license" ,
-    		"label":"$rdfs:label|skos:prefLabel"
+    		"label":"$rdfs:label|skos:prefLabel$lang:en"
     	},
     	"mediaType": {
     		"id":"$dcat:mediaType" ,
-    		"label":"$rdfs:label|skos:prefLabel"
+    		"label":"$rdfs:label|skos:prefLabel$lang:en"
     	},
     	"byteSize":"$dcat:byteSize" ,
     	"accessDatabase": {

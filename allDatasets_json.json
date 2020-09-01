@@ -14,8 +14,8 @@
     },
     "temporal": {
     	"id":"$dct:temporal" ,
-    	"endDate":"$xsd:dateTime(dcat:endDate)" ,
-    	"startDate":"$xsd:dateTime(dcat:startDate)"
+    	"endDate":"$dcat:endDate" ,
+    	"startDate":"$dcat:startDate"
     },
     "temporalResolution":"$dcat:temporalResolution" ,
     "conformsTo":{

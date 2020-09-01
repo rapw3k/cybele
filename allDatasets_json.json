@@ -14,8 +14,8 @@
     },
     "temporal": {
     	"id":"$dct:temporal" ,
-    	"endDate":"$dcat:endDate" ,
-    	"startDate":"$dcat:startDate"
+    	"endDate":"$xsd:dateTime(dcat:endDate)" ,
+    	"startDate":"$xsd:dateTime(dcat:startDate)"
     },
     "temporalResolution":"$dcat:temporalResolution" ,
     "conformsTo":{
@@ -81,7 +81,8 @@
 		"cybele":	"http://w3id.org/cybele/model#",
 		"locn":	"http://www.w3.org/ns/locn#",
 		"cybeleBase": "https://w3id.org/cybele/",
-		"skos": "http://www.w3.org/2004/02/skos/core#"
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "$orderby": "?id",
   "$lang": "en",

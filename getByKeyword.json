@@ -10,7 +10,7 @@
     "?s a dcat:Dataset",
     "?s ?p ?o",
     "?s ?p1 ?o1",
-    "?o1 rdfs:label|skos:prefLabel* ?label"
+    "?o1 skos:prefLabel* ?label"
   ],
   "$filter": "regex(?label, ?_keyword, 'i') && STRSTARTS (str(?s), str(cybeleBase:))",
   "$prefixes": {

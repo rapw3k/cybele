@@ -6,18 +6,21 @@
     	"value": "?o"
     }
   },
-  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
-    "?s rdfs:label|skos:prefLabel* ?label",
-    "?s ?p ?o"
+    "?s ?p ?o",
+    "?s ?p1 ?o1",
+    "?o1 rdfs:label|skos:prefLabel* ?label"
   ],
   "$filter": "regex(?label, ?_keyword, 'i')",
+  "$filter": "STRSTARTS (str(?s), str(cybeleBase:))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",
-    "dcat": "http://www.w3.org/ns/dcat#"
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "cybeleBase": "https://w3id.org/cybele/"
   },
   "$orderby": "?id",
   "$lang": "en",

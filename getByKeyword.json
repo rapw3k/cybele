@@ -12,8 +12,7 @@
     "?s ?p1 ?o1",
     "?o1 rdfs:label|skos:prefLabel* ?label"
   ],
-  "$filter": "regex(?label, ?_keyword, 'i')",
-  "$filter": "STRSTARTS (str(?s), str(cybeleBase:))",
+  "$filter": "regex(?label, "greece", 'i') && STRSTARTS (str(?s), str(cybeleBase:))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

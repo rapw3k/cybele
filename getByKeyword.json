@@ -9,7 +9,7 @@
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset",
-    "?s rdfs:label*|skos:prefLabel* ?label",
+    "?s rdfs:label|skos:prefLabel* ?label",
     "?s ?p ?o"
   ],
   "$filter": "regex(?label, ?_keyword, 'i')",

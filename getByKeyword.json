@@ -15,7 +15,7 @@
     "?o2 rdfs:label ?label2",
     "?s dct:title ?label3"            
   ],
-  "$filter": "(bif:contains(?label1,  ?_keyword || bif:contains(?label2,  ?_keyword) || bif:contains(?label3,  ?_keyword)) && STRSTARTS (str(?s), str(cybeleBase:))",  
+  "$filter": "(bif:contains(?label1,  ?_keyword) || bif:contains(?label2,  ?_keyword) || bif:contains(?label3,  ?_keyword)) && STRSTARTS (str(?s), str(cybeleBase:))",  
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

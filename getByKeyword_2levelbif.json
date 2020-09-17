@@ -27,7 +27,7 @@
   "grlc": {
     "summary": "Retrieve all information about CYBELE datasets including the provided keyword, e.g., test, in the connected resources' label",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "json" ],
+    "tags": [ "test" ],
     "method": "GET",
     "pagination": 50
   }

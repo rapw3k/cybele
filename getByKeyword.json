@@ -19,7 +19,8 @@
     "dct": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
-    "cybeleBase": "https://w3id.org/cybele/"
+    "cybeleBase": "https://w3id.org/cybele/",
+    "bif": "bif"
   },
   "$orderby": "?id",
   "$lang": "en",

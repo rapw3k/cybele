@@ -28,7 +28,7 @@
   "grlc": {
     "summary": "Retrieve all information about CYBELE datasets having the provided keyword, e.g., test. The query checks the dataset labels, geolocation labels associated (e.g., Greece) and publisher labels (e.g., PSNC)",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "json" ],
+    "tags": [ "test" ],
     "method": "GET",
     "pagination": 50
   }

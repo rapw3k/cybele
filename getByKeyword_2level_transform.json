@@ -1,0 +1,34 @@
+#+ summary: "Retrieve all information about CYBELE datasets including the provided keyword, e.g., test, in the connected resources' label"
+#+ endpoint: "https://www.foodie-cloud.org/sparql"
+#+ tags: [ "test" ]
+#+ method: "GET"
+#+ pagination: 50
+#+ transform: {
+#+   "id": "?s",
+#+   "metadata": {
+#+     "property": "?p",
+#+     "value": "?o"
+#+   },
+#+   "$anchor": "id"
+#+ }
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX cybeleBase: <https://w3id.org/cybele/>
+PREFIX bif: <bif:>
+
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+    ?s a dcat:Dataset.
+    ?s ?p ?o.
+    ?s ?p1 ?o1.
+    ?o1 skos:prefLabel ?label.
+    ?label bif:contains ?_keyword.
+#    FILTER(STRSTARTS (str(?s), str(cybeleBase:)))
+}
+ORDER BY ?s
+LIMIT 50
+OFFSET 0

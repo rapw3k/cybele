@@ -6,7 +6,6 @@
     	"value": "?o"
     }
   },
-  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?_resource_iri ?p ?o"
   ],
@@ -20,7 +19,7 @@
   "$lang": "en",
   "$limit": 50,
   "grlc": {
-    "summary": "Retrieve all information about a particular resource (e.g., dataset (https://w3id.org/cybele/dataset/id/bd2c8216-fd62-4740-92b4-39511af4336c), publisher (https://w3id.org/cybele/agent/id/8f6332ab-bb45-4199-a339-3f2710d4070d), etc.)",
+    "summary": "Retrieves all the information about a particular resource (e.g., dataset (https://w3id.org/cybele/dataset/id/bd2c8216-fd62-4740-92b4-39511af4336c), publisher (https://w3id.org/cybele/agent/id/8f6332ab-bb45-4199-a339-3f2710d4070d), etc.)",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

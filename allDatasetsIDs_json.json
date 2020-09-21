@@ -15,7 +15,7 @@
   "$orderby": "?id",
   "$lang": "en",
   "grlc": {
-    "summary": "Retrieve the IDs of all CYBELE datasets",
+    "summary": "Retrieves the IDs of all CYBELE datasets",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "json" ],
     "method": "GET",

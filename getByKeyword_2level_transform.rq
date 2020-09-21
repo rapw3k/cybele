@@ -25,7 +25,7 @@ WHERE {
     ?s a dcat:Dataset.
     ?s ?p ?o.
     ?s ?p1 ?o1.
-    ?o1 skos:prefLabel ?label.
+    ?o1 skos:prefLabel ?label1.
     
     ?s ?p2 ?o2 .
     ?o2 rdfs:label ?label2 .

@@ -26,8 +26,9 @@ WHERE {
     ?s ?p ?o.
     ?s ?p1 ?o1.
     ?o1 skos:prefLabel ?label.
-    ?label bif:contains ?_keyword.
+#    ?label bif:contains ?_keyword.
 #    FILTER(STRSTARTS (str(?s), str(cybeleBase:)))
+    FILTER ((bif:contains(?label1,  ?_keyword) || bif:contains(?label2,  ?_keyword) || bif:contains(?label3,  ?_keyword)) && STRSTARTS (str(?s), str(cybeleBase:)))
 }
 ORDER BY ?s
 LIMIT 50

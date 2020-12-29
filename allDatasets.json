@@ -46,7 +46,7 @@
     		"UoM":"$sdmx-attribute:unitMeasure"
     	}  
     },
-    "dcat:distribution": {
+    "distribution": {
     	"id":"$dcat:distribution" ,
     	"license": {
     		"id":"$dct:license" ,

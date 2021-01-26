@@ -38,13 +38,15 @@
     		"id":"$qb:component/qb:dimension" ,
     		"label":"$rdfs:label" ,
     		"range":"$rdfs:range" ,
-    		"crs":"$qb4st:crs"
+    		"crs":"$qb4st:crs",
+    		"description":"$rdfs:comment"
     	},
     	"measure": {
     		"id":"$qb:component/qb:measure" ,
     		"label":"$rdfs:label" ,
     		"range":"$rdfs:range" ,
-    		"UoM":"$sdmx-attribute:unitMeasure"
+    		"UoM":"$sdmx-attribute:unitMeasure",
+    		"description":"$rdfs:comment"
     	}  
     },
     "distribution": {

@@ -43,6 +43,7 @@
     	"measure": {
     		"id":"$qb:component/qb:measure" ,
     		"label":"$rdfs:label" ,
+    		"range":"$rdfs:range" ,
     		"UoM":"$sdmx-attribute:unitMeasure"
     	}  
     },

@@ -8,6 +8,7 @@
     	"label":"$rdfs:label|skos:prefLabel"
     },
     "title":"$dct:title" ,
+	"description":"$dct:description" ,
 	"accessRights": {
     	"id":"$dct:accessRights" ,
     	"label":"$rdfs:label|skos:prefLabel$lang:en"

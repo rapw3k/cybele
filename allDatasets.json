@@ -71,7 +71,8 @@
     		"connectionString":"$cybele:connectionString" ,
     		"accessTable":{
     			"id":"$cybele:accessTable",
-    			"label":"$cybele:tableName"
+    			"label":"$cybele:tableName",
+				"subject":"$dct:subject$var:?s"
     		}
     	}
     }

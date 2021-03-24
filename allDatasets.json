@@ -92,7 +92,7 @@
 		"cybele":	"http://w3id.org/cybele/model#",
 		"locn":	"http://www.w3.org/ns/locn#",
 		"cybeleBase": "https://w3id.org/cybele/",
-		"cybeleEx": "https://w3id.org/cybele/",
+		"cybeleEx": "https://w3id.org/cybele/dataset/id/VELOS_dataset",
 		"skos": "http://www.w3.org/2004/02/skos/core#",
 		"qb4st": "http://www.w3.org/ns/qb4st/"
   },

@@ -72,7 +72,7 @@
     		"accessTable":{
     			"id":"$cybele:accessTable",
     			"label":"$cybele:tableName",
-				"subject":"$dct:subject$var:?s"
+				"subject":"$dct:subject"
     		}
     	}
     }

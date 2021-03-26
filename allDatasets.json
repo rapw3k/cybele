@@ -34,7 +34,8 @@
     },    
     "spatial": {
     	"id":"$dct:spatial",
-    	"geometryAsWKT":"$locn:geometry"
+    	"geometryAsWKT":"$locn:geometry",
+		"label":"$rdfs:label|skos:prefLabel$lang:en"
     },
     "spatialResolutionInMeters":"$dcat:spatialResolutionInMeters" ,
     "structure":{

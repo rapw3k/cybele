@@ -1,5 +1,6 @@
 {
   "proto": {
+    "graph": "?_graph_iri",
     "id": "?s"
   },
   "$from": "?_graph_iri",

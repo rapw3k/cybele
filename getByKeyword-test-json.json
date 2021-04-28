@@ -26,7 +26,7 @@
       "cybeleBase": "https://w3id.org/cybele/",
       "bif": "bif:"
     },
-    "$orderby": "?s",
+    "$orderby": "?id",
     "$lang": "en",
     "grlc": {
       "summary": "Retrieves all the information about CYBELE datasets including the provided keyword, e.g., greece",

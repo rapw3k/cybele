@@ -1,3 +1,2 @@
-#https://www.foodie-cloud.org/sparql
 https://www.foodie-cloud.org/sparql?default-graph-uri=https://w3id.org/cybele/datasets/
 # foo bar

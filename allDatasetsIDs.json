@@ -2,7 +2,6 @@
   "proto": {
     "id": "?s"
   },
-  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s a dcat:Dataset"
   ],
@@ -16,7 +15,7 @@
   "$lang": "en",
   "grlc": {
     "summary": "Retrieves the IDs of all CYBELE datasets",
-    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "endpoint": "https://www.foodie-cloud.org/sparql?default-graph-uri=https://w3id.org/cybele/datasets/",
     "tags": [ "json" ],
     "method": "GET",
     "pagination": 50

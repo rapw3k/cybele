@@ -100,7 +100,7 @@
   "$lang": "en",
   "grlc": {
     "summary": "Retrieves all the information about CYBELE datasets, with full structure and including information of referenced resources",
-    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "endpoint": "https://www.foodie-cloud.org/sparql?default-graph-uri=https://w3id.org/cybele/datasets/",
     "tags": [ "json" ],
     "method": "GET",
     "pagination": 100

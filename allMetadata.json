@@ -6,7 +6,6 @@
     	"value": "?o"
     }
   },
-  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
     "?s ?p ?o"
   ],
@@ -19,7 +18,7 @@
   "$lang": "en",
   "grlc": {
     "summary": "Retrieves all the information about CYBELE resources (datasets, agents, periodOfTime, etc.)",
-    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "endpoint": "https://www.foodie-cloud.org/sparql?default-graph-uri=https://w3id.org/cybele/datasets/",
     "tags": [ "json" ],
     "method": "GET",
     "pagination": 50

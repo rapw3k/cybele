@@ -14,7 +14,7 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dbo": "http://dbpedia.org/ontology/"
   },
-  "$orderby": "?id",
+  "$orderby": "?s",
   "$lang": "en",
   "grlc": {
     "summary": "Retrieves all the information about CYBELE resources (datasets, agents, periodOfTime, etc.)",

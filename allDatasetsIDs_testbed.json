@@ -18,7 +18,7 @@
   "grlc": {
     "summary": "Retrieves the IDs of all CYBELE datasets",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "json" ],
+    "tags": [ "testbed" ],
     "method": "GET",
     "pagination": 50
   }

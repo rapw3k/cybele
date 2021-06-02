@@ -1,0 +1,39 @@
+#+ summary: "Retrieves all the information about CYBELE resources (datasets, agents, periodOfTime, etc.)"
+#+ description: "Retrieves all the information about CYBELE resources (datasets, agents, periodOfTime, etc.). NOTE: make sure response content type is application/json"
+#+ endpoint: "https://www.foodie-cloud.org/sparql"
+#+ tags: [ "testbed" ]
+#+ method: "GET"
+#+ pagination: 100
+#+ transform: {
+#+   "id": "?s",
+#+   "metadata": {
+#+     "property": "?p",
+#+     "value": "?o"
+#+   },
+#+   "$anchor": "id"
+#+ }
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX cybeleBase: <https://w3id.org/cybele/>
+PREFIX bif: <bif:>
+
+
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+   ?s ?p ?o.
+   { SELECT ?s 
+     WHERE {
+        GRAPH ?g {
+          ?s a ?c .
+        }
+        FILTER(STRSTARTS(STR(?g),str(?_testbed)) )
+     }
+   }
+}
+ORDER BY ?s
+LIMIT 100
+OFFSET 0

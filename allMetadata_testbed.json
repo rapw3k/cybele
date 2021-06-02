@@ -7,7 +7,6 @@
     }
   },
   "$where": [
-    "?s ?p ?o",
     "GRAPH ?g { ?s a ?c }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",

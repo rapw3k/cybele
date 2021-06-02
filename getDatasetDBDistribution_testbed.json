@@ -13,7 +13,6 @@
     	}
     }
   },
-  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [    
     "GRAPH ?g { ?_resource_iri dcat:distribution ?distribution . ?distribution cybele:accessDatabase ?database . ?database rdfs:label ?databaseLabel . ?database cybele:connectionString ?connectionString . ?database cybele:accessTable ?databaseTable . ?databaseTable cybele:tableName ?tableName }"
   ],

@@ -41,14 +41,14 @@
     "structure":{
     	"id":"$qb:structure" ,
     	"dimension": {
-    		"id":"$qb:component/qb:dimension" ,
+    		"id":"$qb:component/qb:dimension$list" ,
     		"label":"$rdfs:label" ,
     		"range":"$rdfs:range" ,
     		"crs":"$qb4st:crs",
     		"description":"$rdfs:comment"
     	},
     	"measure": {
-    		"id":"$qb:component/qb:measure" ,
+    		"id":"$qb:component/qb:measure$list" ,
     		"label":"$rdfs:label" ,
     		"range":"$rdfs:range" ,
     		"UoM":"$sdmx-attribute:unitMeasure",

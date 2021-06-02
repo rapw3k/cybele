@@ -7,9 +7,8 @@
     }
   },
   "$where": [
-    "GRAPH ?g { ?s a ?c }"
+    "GRAPH ?_testbed { ?s ?p ?o }"
   ],
-  "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

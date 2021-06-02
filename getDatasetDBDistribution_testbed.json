@@ -20,7 +20,7 @@
     "?database rdfs:label ?databaseLabel" ,
     "?database cybele:connectionString ?connectionString" ,
     "?database cybele:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName ?tableName",
+    "?databaseTable rdfs:label ?tableName",
     "GRAPH ?g { ?_resource_iri dcat:distribution ?distribution }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",

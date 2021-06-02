@@ -20,7 +20,7 @@
     "?database rdfs:label ?databaseLabel" ,
     "?database cybele:connectionString ?connectionString" ,
     "?database cybele:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName ?tableName"
+    "?databaseTable rdfs:label ?tableName"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

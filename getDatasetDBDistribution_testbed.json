@@ -15,13 +15,7 @@
   },
   "$from": "https://w3id.org/cybele/datasets/",
   "$where": [    
-    "?_resource_iri dcat:distribution ?distribution" ,
-    "?distribution cybele:accessDatabase ?database" ,
-    "?database rdfs:label ?databaseLabel" ,
-    "?database cybele:connectionString ?connectionString" ,
-    "?database cybele:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName ?tableName",
-    "GRAPH ?g { ?distribution cybele:accessDatabase ?database }"
+    "GRAPH ?g { ?_resource_iri dcat:distribution ?distribution . ?distribution cybele:accessDatabase ?database . ?database rdfs:label ?databaseLabel . ?database cybele:connectionString ?connectionString . ?database cybele:accessTable ?databaseTable . ?databaseTable cybele:tableName ?tableName }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {

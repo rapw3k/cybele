@@ -21,8 +21,10 @@
     "?structureM qb:component ?measureComponent" ,
     "?measureComponent qb:measure ?measureProperty" ,
     "?measureProperty rdfs:label ?measureLabel" ,
-    "?measureProperty sdmx-attribute:unitMeasure ?measureUoM"
+    "?measureProperty sdmx-attribute:unitMeasure ?measureUoM",
+    "GRAPH ?g { ?_resource_iri qb:structure ?structureD }"
   ],
+  "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -36,8 +38,8 @@
   "$limit": 100,
   "grlc": {
     "summary": "Retrieves the structure information about a particular dataset (e.g., https://w3id.org/cybele/dataset/id/dataset_2)",
-    "endpoint": "https://www.foodie-cloud.org/sparql?default-graph-uri=https://w3id.org/cybele/datasets/",
-    "tags": [ "json" ],
+    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "tags": [ "testbed" ],
     "method": "GET",
     "pagination": 100
     }

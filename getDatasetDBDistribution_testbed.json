@@ -20,8 +20,10 @@
     "?database rdfs:label ?databaseLabel" ,
     "?database cybele:connectionString ?connectionString" ,
     "?database cybele:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName ?tableName"
+    "?databaseTable cybele:tableName ?tableName",
+    "GRAPH ?g { ?_resource_iri dcat:distribution ?distribution }"
   ],
+  "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -34,8 +36,8 @@
   "$limit": 100,
   "grlc": {
     "summary": "Retrieves the database distribution information about a particular dataset (e.g., https://w3id.org/cybele/dataset/id/dataset_2)",
-    "endpoint": "https://www.foodie-cloud.org/sparql?default-graph-uri=https://w3id.org/cybele/datasets/",
-    "tags": [ "json" ],
+    "endpoint": "https://www.foodie-cloud.org/sparql",
+    "tags": [ "testbed" ],
     "method": "GET",
     "pagination": 100
     }

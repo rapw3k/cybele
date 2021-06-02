@@ -7,21 +7,19 @@
     }
   },
   "$where": [
-    "?s a dcat:Dataset",
     "?s ?p ?o",
-    "GRAPH ?g { ?s a dcat:Dataset }"
+    "GRAPH ?g { ?s a ?c }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "dbo": "http://dbpedia.org/ontology/",
-    "dcat": "http://www.w3.org/ns/dcat#"
+    "dbo": "http://dbpedia.org/ontology/"
   },
   "$orderby": "?id",
   "$lang": "en",
   "grlc": {
-    "summary": "Retrieves all the information about CYBELE datasets as a flat list (information about referenced resources can be retrieved with the /getResource method)",
+    "summary": "Retrieves all the information about CYBELE resources (datasets, agents, periodOfTime, etc.)",
     "endpoint": "https://www.foodie-cloud.org/sparql",
     "tags": [ "testbed" ],
     "method": "GET",

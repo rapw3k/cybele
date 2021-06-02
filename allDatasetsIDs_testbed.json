@@ -1,14 +1,9 @@
 {
   "proto": {
-    "id": "?s",
-    "metadata": {
-    	"property": "?p",
-    	"value": "?o"
-    }
+    "id": "?s"
   },
   "$where": [
     "?s a dcat:Dataset",
-    "?s ?p ?o",
     "GRAPH ?g { ?s a dcat:Dataset }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
@@ -21,9 +16,9 @@
   "$orderby": "?id",
   "$lang": "en",
   "grlc": {
-    "summary": "Retrieves all the information about CYBELE datasets as a flat list (information about referenced resources can be retrieved with the /getResource method)",
+    "summary": "Retrieves the IDs of all CYBELE datasets",
     "endpoint": "https://www.foodie-cloud.org/sparql",
-    "tags": [ "testbed" ],
+    "tags": [ "json" ],
     "method": "GET",
     "pagination": 50
   }

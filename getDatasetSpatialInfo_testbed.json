@@ -6,9 +6,7 @@
     	"geometryAsWKT":"$locn:geometry"
     }
   },
-  "$from": "https://w3id.org/cybele/datasets/",
   "$where": [
-    "?_resource_iri dct:spatial ?spatial",
     "GRAPH ?g { ?_resource_iri dct:spatial ?spatial }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",

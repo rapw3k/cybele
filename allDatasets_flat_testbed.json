@@ -6,11 +6,12 @@
     	"value": "?o"
     }
   },
-  "$from": "?_testbed",
   "$where": [
     "?s a dcat:Dataset",
-    "?s ?p ?o"
+    "?s ?p ?o",
+    "GRAPH ?g { ?s a dcat:Dataset }"
   ],
+  "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

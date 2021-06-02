@@ -21,7 +21,7 @@
     "?database cybele:connectionString ?connectionString" ,
     "?database cybele:accessTable ?databaseTable" ,
     "?databaseTable cybele:tableName ?tableName",
-    "GRAPH ?g { ?_resource_iri dcat:distribution ?distribution }"
+    "GRAPH ?g { ?distribution cybele:accessDatabase ?database }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {

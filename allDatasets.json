@@ -81,7 +81,7 @@
   "$where": [
     "?s a dcat:Dataset"
   ],
-  "$filter": "STRSTARTS (str(?s), str(cybeleBase:))",
+  "$filter": "STRSTARTS (str(?s), str(cybeleBase:)) && str(?s)=str(?subject)",
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

@@ -14,12 +14,7 @@
     }
   },
   "$where": [    
-    "?_resource_iri dcat:distribution ?distribution" ,
-    "?distribution cybele:accessDatabase|cybele_sec:accessDatabase ?database" ,
-    "?database rdfs:label ?databaseLabel" ,
-    "?database cybele:connectionString|cybele_sec:connectionString ?connectionString" ,
-    "?database cybele:accessTable|cybele_sec:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName|cybele_sec:tableName ?tableName"
+    "?_resource_iri dcat:distribution ?distribution OPTIONAL { ?distribution cybele:accessDatabase|cybele_sec:accessDatabase ?database. OPTIONAL { ?database rdfs:label ?databaseLabel .} OPTIONAL { ?database cybele:connectionString|cybele_sec:connectionString ?connectionString.} OPTIONAL { ?database cybele:accessTable|cybele_sec:accessTable ?databaseTable. OPTIONAL {?databaseTable cybele:tableName|cybele_sec:tableName ?tableName}}}"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",

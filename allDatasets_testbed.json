@@ -67,12 +67,12 @@
     	},
     	"byteSize":"$dcat:byteSize" ,
     	"accessDatabase": {
-    		"id":"$cybele:accessDatabase" ,
+    		"id":"$cybele:accessDatabase|cybele_sec:accessDatabase" ,
     		"label":"$rdfs:label" ,
-    		"connectionString":"$cybele:connectionString" ,
+    		"connectionString":"$cybele:connectionString|cybele_sec:connectionString" ,
     		"accessTable":{
-    			"id":"$cybele:accessTable",
-    			"label":"$cybele:tableName",
+    			"id":"$cybele:accessTable|cybele_sec:accessTable",
+    			"label":"$cybele:tableName|cybele_sec:tableName",
 				"subject":"$dct:subject$var:?subject"
     		}
     	}
@@ -92,6 +92,7 @@
     "qb": "http://purl.org/linked-data/cube#",
 		"sdmx-attribute": "http://purl.org/linked-data/sdmx/2009/attribute#",
 		"cybele":	"http://w3id.org/cybele/model#",
+		"cybele_sec":	"https://w3id.org/cybele/model#",
 		"locn":	"http://www.w3.org/ns/locn#",
 		"cybeleBase": "https://w3id.org/cybele/",
 		"skos": "http://www.w3.org/2004/02/skos/core#",

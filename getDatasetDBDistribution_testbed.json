@@ -14,7 +14,7 @@
     }
   },
   "$where": [    
-    "GRAPH ?g { ?_resource_iri dcat:distribution ?distribution . ?distribution cybele:accessDatabase ?database . ?database rdfs:label ?databaseLabel . ?database cybele:connectionString ?connectionString . ?database cybele:accessTable ?databaseTable . ?databaseTable cybele:tableName ?tableName }"
+    "GRAPH ?g { ?_resource_iri dcat:distribution ?distribution . ?distribution cybele:accessDatabase|cybele_sec:accessDatabase ?database . ?database rdfs:label ?databaseLabel . ?database cybele:connectionString|cybele_sec:connectionString ?connectionString . ?database cybele:accessTable|cybele_sec:accessTable ?databaseTable . ?databaseTable cybele:tableName|cybele_sec:tableName ?tableName }"
   ],
   "$filter": "STRSTARTS(STR(?g),str(?_testbed))",
   "$prefixes": {
@@ -23,7 +23,8 @@
     "dct": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "cybele":	"http://w3id.org/cybele/model#"
+    "cybele":	"http://w3id.org/cybele/model#",
+    "cybele_sec":	"https://w3id.org/cybele/model#"
   },
   "$lang": "en",
   "$limit": 100,

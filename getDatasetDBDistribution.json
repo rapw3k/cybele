@@ -15,11 +15,11 @@
   },
   "$where": [    
     "?_resource_iri dcat:distribution ?distribution" ,
-    "?distribution cybele:accessDatabase ?database" ,
+    "?distribution cybele:accessDatabase|cybele_sec:accessDatabase ?database" ,
     "?database rdfs:label ?databaseLabel" ,
-    "?database cybele:connectionString ?connectionString" ,
-    "?database cybele:accessTable ?databaseTable" ,
-    "?databaseTable cybele:tableName ?tableName"
+    "?database cybele:connectionString|cybele_sec:connectionString ?connectionString" ,
+    "?database cybele:accessTable|cybele_sec:accessTable ?databaseTable" ,
+    "?databaseTable cybele:tableName|cybele_sec:tableName ?tableName"
   ],
   "$prefixes": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -27,7 +27,8 @@
     "dct": "http://purl.org/dc/terms/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "foaf": "http://xmlns.com/foaf/0.1/",
-    "cybele":	"http://w3id.org/cybele/model#"
+    "cybele":	"http://w3id.org/cybele/model#",
+    "cybele_sec":	"https://w3id.org/cybele/model#"
   },
   "$lang": "en",
   "$limit": 100,
